@@ -1,8 +1,18 @@
 public class EratosthenesPrimeSieve implements PrimeSieve{
 
+    public int obergrenze;
+
+    public EratosthenesPrimeSieve(int obergrenze) {
+        this.obergrenze = obergrenze;
+    }
+
     @Override
     public boolean isPrime(int p) {
-        return false;
+        if(p%2 != 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     @Override
