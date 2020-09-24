@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        EratosthenesPrimeSieve e = new EratosthenesPrimeSieve(101);
+        EratosthenesPrimeSieve e = new EratosthenesPrimeSieve(20);
         e.printPrimes();
+
     }
 }
