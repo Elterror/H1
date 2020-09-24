@@ -46,6 +46,12 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
             }
         }
 
-        
+
+        for (int e :Nlist) {
+            for (int f :Plist) {
+                for (int g:Plist) {
+                }
+            }
+        }
     }
 }
