@@ -39,6 +39,13 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
             }
         }
 
+        LinkedList<Integer> Plist = new LinkedList<>();
+        for (int i = 2; i <= obergrenze; i++) {
+            if (isPrime(i)) {
+                Plist.add(i);
+            }
+        }
 
+        
     }
 }
