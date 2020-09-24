@@ -46,11 +46,18 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
             }
         }
 
-
+        boolean done = false;
         for (int e :Nlist) {
             for (int f :Plist) {
                 for (int g:Plist) {
-                    System.out.println(e + "Summe: " + e +" = " + f + " + " + g);
+                    if(f+g == e){
+                        System.out.println(e + "Summe: " + e +" = " + f + " + " + g);
+                        done = true;
+                        break;
+                    }
+                }
+                if(done) {
+                    done = false;
                     break;
                 }
             }
